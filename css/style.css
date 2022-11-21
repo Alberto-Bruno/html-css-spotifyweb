@@ -7,7 +7,7 @@
 /*Generics*/
 
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Header */
@@ -46,20 +46,57 @@ header {
 
 footer {
     flex: 0 0 60px;
-    background-color: #222;
+    background-color: #282828;
 }
 
 /* Siderbar */
 
 .siderbar {
     flex: 0 0 50px;
-    background-color: darkgrey;
+    background-color: black;
     z-index: 1;
 }
 
 main {
     flex: 1 1 auto;
     overflow: auto;
-    background-color: aqua;
+    background-color: #141922;
     padding-top: 90px;
+}
+
+button {
+    position: absolute;
+    right: 15px;
+    top: 30px;
+
+    border-radius: 20px;
+    border-color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+/* Main */
+
+.music {
+    display: flex;
+    padding: 5px;
+}
+
+.music .music-image {
+    flex: 0 0 200px;
+    padding: 3px;
+}
+
+.music-image img {
+    max-width: 100%;
+    display: block;
+}
+
+.music-name {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    padding: 5px;
+    color: white;
+    text-align: center;
 }
