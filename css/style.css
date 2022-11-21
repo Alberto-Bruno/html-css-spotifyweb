@@ -10,23 +10,15 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Header */
-
-header {
-    position: fixed;
-    top: 0;
-    right: 0px;
-    left: 0;
-    background-color: rgba( 0, 0, 0, 0.5);
-    height: 80px;
-}
 
 /* Utils */
 
 .container {
+    display: flex;
     max-width: 600px;
     margin: 0 auto;
 }
+
 
 /* Layout */
 
@@ -40,7 +32,7 @@ header {
     flex: 1 1 auto;
     background-color: gray;
     overflow: auto;
-
+    
     display: flex;
 }
 
@@ -49,19 +41,15 @@ footer {
     background-color: #282828;
 }
 
-/* Siderbar */
+/* Header */
 
-.siderbar {
-    flex: 0 0 50px;
-    background-color: black;
-    z-index: 1;
-}
-
-main {
-    flex: 1 1 auto;
-    overflow: auto;
-    background-color: #141922;
-    padding-top: 90px;
+header {
+    position: fixed;
+    top: 0;
+    right: 0px;
+    left: 0;
+    background-color: rgba( 0, 0, 0, 0.5);
+    height: 80px;
 }
 
 button {
@@ -77,13 +65,33 @@ button {
     cursor: pointer;
 }
 
+/* Siderbar */
+
+.siderbar {
+    flex: 0 0 50px;
+    background-color: black;
+    z-index: 1;
+}
+
+.icon {
+    max-width: 70%;
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
 /* Main */
+
+main {
+    flex: 1 1 auto;
+    overflow: auto;
+    background-color: #141922;
+    padding-top: 90px;
+}
 
 .music {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 5px;
+    padding: 10px;
 }
 
 .music .music-image {
