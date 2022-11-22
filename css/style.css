@@ -10,11 +10,33 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+a {
+    opacity: 0.6;
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.5;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+ul {
+    list-style-type: none;
+}
+
+section {
+    margin: 50px 0;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
 
 /* Utils */
 
 .container {
-    display: flex;
     max-width: 600px;
     margin: 0 auto;
 }
@@ -80,6 +102,22 @@ button {
     left: 5px;
 }
 
+.logo-text {
+    position: relative;
+    right: 50px;
+}
+
+li #text-selection {
+    display: none;
+}
+
+/* Navbar */
+
+ul#menu li {
+    display: inline;
+    padding: 5px;
+}
+
 /* Main */
 
 main {
@@ -87,30 +125,54 @@ main {
     overflow: auto;
     background-color: #141922;
     padding-top: 90px;
+    color: white;
+}
+
+.title-gallery {
+    margin: 35px 20px;
 }
 
 .music {
+    margin: 0 10px;
     display: flex;
+    flex-wrap: wrap;
+    text-align: center; 
+}
+
+.music li {
+    flex-basis: 50%;
     padding: 10px;
 }
 
-.music .music-image {
-    flex: 0 0 200px;
-    padding: 3px;
+.music article {
+    cursor: pointer;
 }
 
-.music-image img {
-    max-width: 100%;
-    display: block;
-}
-
-.music-name {
+.music figure {
     position: relative;
-    left: 0;
-    bottom: 0;
-    padding: 5px;
+    transition: transform 0.5s;
+}
+
+.music article:hover figure {
+    transform: scale(1.05) translateY(-10px);
+}
+
+.music article:hover figure::after {
+    content: '\f144';
+    font-family: 'Font Awesome 6 Free';
+    font-size: 50px;
     color: white;
-    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba( 0, 0, 0, 0.5);
 }
 
 /*Footer*/
