@@ -29,6 +29,7 @@ section {
     margin: 50px 0;
 }
 
+
 img {
     height: auto;
     max-width: 100%;
@@ -37,7 +38,7 @@ img {
 /* Utils */
 
 .container {
-    max-width: 600px;
+    
     margin: 0 auto;
 }
 
